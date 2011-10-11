@@ -7,25 +7,25 @@ Quick example
 
 How to use simple CMS
 
-1. Use filter 
+Just add a tag to your twig file to allow user to edit a specific entity type (by default, text & image is provided)
+
+Some Examples
+
 ``` twig
+{# add a text with key 'mycustomtextidentifier'  #}
 {{ 'mycustomtextidentifier'|scms('text') }}
-```
-2. OR
-``` twig function
+
+{# add a image with key 'mycustomimageidentifier'  #}
 {{ scms('mycustomimageidentifier','image') }}
-```
 
-How to use the same for a flexible amount of items
-
-1. Use filter
-``` twig
+{# add a collections of texts with key 'mycustomtextidentifier'  #}
 {{ 'mycustomtextidentifier'|scms_collection('text') }}
-```
-2. OR
-``` twig function
+
+{# add a collections of images with key 'mycustomimageidentifier'  #}
 {{ scms_collection('mycustomimageidentifier','image') }}
+
 ```
+
 
 
 
